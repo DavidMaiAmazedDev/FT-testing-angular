@@ -1,0 +1,31 @@
+.wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.searching-area {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}   
+
+.text {
+    margin-right: 6px;
+    font-weight: bold;
+}
+
+.summary {
+    margin-right: 100px;
+}
+
+button {
+    margin-left: 5px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+}

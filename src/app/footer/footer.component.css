@@ -1,0 +1,18 @@
+.footer-container {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-weight: bold;
+}
+
+hr {
+    height: 2px;
+    font-weight: bold;
+    color: antiquewhite;
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}

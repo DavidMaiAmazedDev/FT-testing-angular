@@ -1,0 +1,23 @@
+<div class="block">
+  <div class="block-1" (click)="navigateToUserDetail(user.id)">
+    <div class="quick-summary">
+      <div class="img-holder">
+        <img src='http://localhost:3000{{user.profile_picture_url}}' />
+      </div>
+      <div class="name-holder">
+        <span>{{user.username}}</span>
+      </div>
+      
+    </div>
+    <hr />
+    <!-- <img src='http://localhost:3000/images/profiles/nemodolorporro.png' /> -->
+    <div class="username"><span>{{user.employment.title}}</span></div>
+    <div class="email">{{user.email}}</div>
+    <div class="dob">{{user.date_of_birth}}</div>
+  </div>
+</div>
+<div class="go-back">
+  <button (click)="backToMainPage()">Go Back</button>
+</div>
+
+  

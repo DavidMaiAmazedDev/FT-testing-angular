@@ -1,0 +1,28 @@
+<div class="wrapper">
+  
+  <div class="search-area row">
+    <app-search-user [numOfUser]="numOfUser" (onSearch)="doSearch($event)"></app-search-user>
+  </div>
+  <div class="content-area">
+    <ng-container *ngFor="let user of (users$ |async)">
+      <div class="block" (click)="navigateToUserDetail(user.id)">
+        <div class="quick-summary">
+          <div class="img-holder">
+            <img src='http://localhost:3000{{user.profile_picture_url}}' />
+          </div>
+          <div class="name-holder">
+            <span>{{user.username}}</span>
+          </div>
+          
+        </div>
+        <hr />
+        <!-- <img src='http://localhost:3000/images/profiles/nemodolorporro.png' /> -->
+        <div class="username"><span>{{user.employment.title}}</span></div>
+        <div class="email">{{user.email}}</div>
+        <div class="dob">{{user.date_of_birth}}</div>
+      </div>
+        
+    </ng-container>
+  </div>
+  
+</div>

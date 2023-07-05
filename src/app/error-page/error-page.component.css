@@ -1,0 +1,22 @@
+.container {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.error-text {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.btn-back {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.btn-back > button {
+    background: black;
+    color: white;
+    font-size: 28px;
+}

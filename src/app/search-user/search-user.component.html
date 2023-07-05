@@ -1,0 +1,26 @@
+
+<div class="wrapper">
+  <div class="summary" *ngIf="numOfUser > 0; else noRecordFound">
+    {{numOfUser}} Employees were found
+  </div>
+  <div class="searching-area">
+    <div class="text">
+      <span>SEARCH BY USERNAME:</span>
+    </div>
+    <div class="content">
+      <input class="form-control" [(ngModel)]="searchText" 
+      type="text" name="searchText" id="searchText"
+      (ngModelChange)="this.userNameSearchText.next($event)">
+    </div>
+    <div class="action">
+      <button (click)="onSearching()">SEARCH</button>
+      <button (click)="onClear()">CLEAR</button>
+    </div>
+  </div>
+ 
+<ng-template #noRecordFound>
+  <div class="summary">
+    <span>No Record Found</span>
+  </div>
+</ng-template>  
+</div>

@@ -1,0 +1,25 @@
+{
+  "customers": [
+    {
+      "name": "json staham22",
+      "phone": "91092839209512122",
+      "address": "123 Sun Street",
+      "membership": "Platinum",
+      "id": 1
+    },
+    {
+      "name": "Mary Johnson",
+      "phone": "808937482734",
+      "address": "893 Main Voulevard",
+      "membership": "Pro",
+      "id": 2
+    },
+    {
+      "name": "david",
+      "phone": "0822680892",
+      "address": "Ha Dong Ha Noi",
+      "membership": "Platinum",
+      "id": 3
+    }
+  ]
+}
